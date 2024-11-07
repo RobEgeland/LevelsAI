@@ -6,30 +6,26 @@
 			"label": "C/C++: cl.exe build active file",
 			"command": "cl.exe",
 			"args": [
-				"/Zi",
-				"/EHsc",
-				"/nologo",
-				"/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"${file}",
-				"/std:c++17",
-                "main.cpp",
+				"/Zi",                        // Generate debug information
+				"/EHsc",                      // Enable standard C++ exception handling
+				"/nologo",                    // Suppress the startup banner
+				"/Fe${workspaceFolder}\\${fileBasenameNoExtension}.exe",  // Output file
+				"${file}",                    // Active file to compile
+				"/std:c++17",                 // Use C++17 standard
                 "/link",
                 "Ole32.lib",
                 "Msdmo.lib",
                 "dmoguids.lib"
-
 			],
 			"options": {
-				"cwd": "${fileDirname}"
+				"cwd": "${workspaceFolder}"  // Set the current directory to the workspace folder
 			},
-			"problemMatcher": [
-				"$msCompile"
-			],
+			"problemMatcher": ["$msCompile"],
 			"group": {
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: cl.exe"
+			"detail": "Build with cl.exe"
 		}
 	]
 }

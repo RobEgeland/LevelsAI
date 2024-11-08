@@ -10,7 +10,7 @@
 				"/EHsc",                      // Enable standard C++ exception handling
 				"/nologo",                    // Suppress the startup banner
 				"/Fe${workspaceFolder}\\${fileBasenameNoExtension}.exe",  // Output file
-				"${file}",                    // Active file to compile
+				"main.cpp",                    // Active file to compile
 				"/std:c++17",                 // Use C++17 standard
                 "/link",
                 "Ole32.lib",

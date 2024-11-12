@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 
 # Directory containing the songs
-songs_dir = r'C:\Users\rober\Desktop\LevelsAI\Songs'
+songs_dir = r'C:\Users\robeg\OneDrive\Desktop\LevelsAI\Training Songs'
 sample_rate = 44100
 
 # Store features and labels across all songs
@@ -141,7 +141,7 @@ val_score = model.evaluate(X_val, y_val, verbose=0)
 print("Training score (MSE):", train_score)
 print("Validation score (MSE):", val_score)
 
-print("Testing Model on I Will Possess Your Heart.mp3")
+print("Testing Model on No Sleep.mp3")
 
 
 def test_model_on_song(song_path, model, sequence_length=10):
@@ -198,7 +198,7 @@ def test_model_on_song(song_path, model, sequence_length=10):
     
     return eq_predictions
 
-song_path = r'C:\Users\rober\Downloads\Rockstar [ ezmp3.cc ].mp3'
+song_path = r'C:\Users\robeg\OneDrive\Desktop\LevelsAI\Wiz Khalifa - No Sleep.mp3'
 eq_predictions = test_model_on_song(song_path, model)
 
 for i, eq in enumerate(eq_predictions[:10]):  # Print the first 10 predictions for brevity

@@ -5,6 +5,7 @@
 #include <audiopolicy.h>
 #include <thread>
 #include <atomic>
+#include <onnxruntime_cxx_api.h>
 
 std::atomic<bool> isRunning(true);
 
@@ -151,7 +152,10 @@ void InitializeWASAPI() {
     waitForEnterThread.join();
 
 }
+
+
 int main() {
+    
     InitializeWASAPI();
     //std::cout << "Hello, World!" << std::endl;
     return 0;

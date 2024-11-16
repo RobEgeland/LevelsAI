@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\rober\Desktop\LevelsAI\LevelsAI\WASAPI_Monitor\build\CMakeFiles\66c33f655fd866ada0ce785d6454787c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{723C7DEF-7AB6-3CD5-B28C-6824E671A1A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
